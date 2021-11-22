@@ -1,5 +1,3 @@
-import re
-
 set1 = set()
 punctuation_marks_input = open("punctuation_marks.txt", "r")
 punctuation_marks = punctuation_marks_input.read()
@@ -38,7 +36,7 @@ adverbs = word_files("adverbs.txt")
 nouns = word_files("nouns.txt")
 pronouns_connectors = word_files("pronouns_connectors.txt")
 verbs = word_files("verbs.txt")
-main_list = create_set_from_input("file_1.txt")
+main_list = create_set_from_input("file_4.txt")
 main_list = list(main_list)
 main_list.sort(key=lambda x: x[1], reverse=True)
 main_list_1 = [num for num in main_list if num[0] not in prepositions_articles]
@@ -64,7 +62,6 @@ for t in main_list_6:
         list2.append(remove_last)
         list3.append(t[1])
 
-print(main_list_6)
 main_list_7 = list(main_list_6)
 list8 = set()
 
@@ -79,7 +76,7 @@ for o in main_list_7:
 
 list9 = list(list8)
 list9.sort(key=lambda x: x[1], reverse=True)
-list10=[]
+list10 = []
 
 for mo in list4:
     last_ch_1 = len(mo)
